@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE AUR CODE</title>
+</head>
+<body style = "backGround-Color :#313131; color :White">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("java")
+
+    function addOptilang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptilang("cpp")
+    addOptilang("cc")
+
+    //edit
+   const secondLang = document.querySelector("li:nth-child(2)")
+   secondLang.innerHTML = "lolo"
+const newLi = document.createElement('li')
+newLi.textContent = "lolo"
+secondLang.replaceWith(newLi)
+
+//edit
+const  secondLang =  document.querySelector("li:first-child")
+firstLang.outerHtml = '<li>TypeScript</li>'
+
+//remove
+const lastLang = document.querySelector('li:last-child')
+lastLang.remove()
+
+</script>
+</html>
