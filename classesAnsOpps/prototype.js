@@ -59,4 +59,4 @@ String.prototype.trueLength = function(){
 }
 anotherUserName.trueLength()
 
-"Ehatasham   ".trueLength()
+"    Ehatasham   ".trueLength()
